@@ -34,6 +34,12 @@ Using the solar mass ($M_\odot$) and radius ($R_\odot$) as constraints, the foll
 * `/docs`: Includes the full detailed report in Spanish.
 * `/results`: Plots and visualizations of the solar model.
 
+* * [cite_start]**lane.m**: Core function to solve the Lane-Emden equation[cite: 361].
+* [cite_start]**lane_emden_euler.m**: Script implementing the Euler integration method[cite: 61, 63].
+* [cite_start]**lanem.m**: Function to calculate the cumulative mass profile $M(\xi)$[cite: 482].
+* [cite_start]**resultados.m**: Main script used to generate the physical profiles and visualizations for the Sun[cite: 79, 557].
+* [cite_start]**Lane_Emden__Modelo_politrópico_del_Sol.pdf**: Complete technical report in Spanish with the full physical analysis[cite: 8].
+
 ## 5. Visualizations
 The model produces several key astrophysical profiles:
 1. **Dimensionless Profiles:** Comparison of $\theta(\xi)$ for different values of $n$.
