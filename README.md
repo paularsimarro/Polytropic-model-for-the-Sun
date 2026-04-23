@@ -26,7 +26,7 @@ Using the solar mass ($M_\odot$) and radius ($R_\odot$) as constraints, the foll
 | **Central Temperature ($T_c$)** | 1.57 $\times$ 10⁷ K |
 | **Estimated Luminosity ($L$)** | 4.8 $\times$ 10³³ erg/s |
 
-## 4. Repository Structure
+
 ## 4. Repository Structure
 The following files contain the implementation and analysis of the solar model:
 
