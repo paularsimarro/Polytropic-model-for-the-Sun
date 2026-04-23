@@ -28,13 +28,22 @@ Using the solar mass ($M_\odot$) and radius ($R_\odot$) as constraints, the foll
 
 
 ## 4. Repository Structure
-The following files contain the implementation and analysis of the solar model:
+The repository consists of several specialized MatLab scripts designed for the numerical integration and physical analysis of the model:
 
-* **lane.m**: Core function to solve the Lane-Emden equation.
-* **lane_emden_euler.m**: Numerical integration script using the Euler method.
-* **lanem.m**: Script to calculate the cumulative mass distribution $M_{n}(\xi)$.
-* **resultados.m**: Main script to generate all physical profiles and visualizations (Density, Temperature, and Mass).
-* **Lane_Emden__Modelo_politrópico_del_Sol.pdf**: Full technical report in Spanish with detailed physical analysis.
+### Core Solvers & Integration
+* **`lane.m`**: The primary function to solve the Lane-Emden equation using iterative recursion.
+* **`lane_emden_euler.m`**: Implementation of the numerical integration using the Euler method, handling the singularity at the origin.
+* **`lanem.m`**: Extended solver that calculates the dimensionless mass distribution $M(\xi)$ alongside the structural variables.
+
+### Analysis & Validation
+* **`comparacion_errores.m`**: Quantifies the accuracy of the numerical model by calculating maximum absolute errors against exact analytical solutions for $n=0$, $n=1$, and $n=5$.
+* **`masas.m`**: Visualizes and compares the mass distribution $M_n(\theta)$ for different polytropic indices.
+
+### Graphics & Visualizations
+* **`grafs.m`**: The main post-processing script. It converts dimensionless variables into physical units for the Sun ($T$ in K, $\rho$ in $g/cm^3$, and $M$ in $M_\odot$) and generates the final solar profiles.
+* **`grafs_theta.m`**: Generates comparative plots for the dimensionless variables $\theta(\xi)$ and $\theta(\xi)^n$ for various indices ($n = 0, 1, 1.5, 3, 5$).
+* **`grafs_luminosidad.m`**: (Optional) Analysis of the energy production and luminosity profiles based on the temperature results.
+
 
 ## 5. Visualizations
 The model produces several key astrophysical profiles:
